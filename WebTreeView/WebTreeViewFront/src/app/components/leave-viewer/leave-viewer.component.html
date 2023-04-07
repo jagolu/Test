@@ -1,0 +1,6 @@
+<ul>
+    <li>{{item.name}}</li>
+    <ul *ngFor="let item of item.children">
+        <app-leave-viewer [leave-item]="item"></app-leave-viewer>
+    </ul>
+</ul>
